@@ -19,3 +19,58 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+
+h1 {
+  -webkit-text-stroke: 1px black;
+   color: white;
+   text-shadow:
+       3px 3px 0 #000,
+     -1px -1px 0 #000,  
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+       1px 1px 0 #000;
+}
+
+
+.text-gold {
+  color: gold;
+}
+
+.text-wavy {
+  animation-name: wavy;
+  animation-duration: 2s;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+@keyframes wavy {
+  0% {
+    top: 0px;
+  }
+  50% {
+    top: -15px;
+  }
+  100% {
+    top: 0px;
+  }
+}
+
+@keyframes shiftBackground {
+  0%, 100% {
+    transform: translateX(-2%);
+  }
+  50% {
+    transform: translateX(-6%);
+  }
+}
+
+.animate-background {
+  animation: shiftBackground 20s ease-in-out infinite alternate;
+}
+.scale-background {
+  transform: scale(1.2); /* Makes the background 20% larger than the viewport */
+  will-change: transform; /* Optimizes animation rendering */
+}
