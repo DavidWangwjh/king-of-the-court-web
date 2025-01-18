@@ -1,5 +1,5 @@
 ## King of the Court
-This is the repository for the King of the Court web page. It's builtusing **Next.js** and deployed using **Vercel**.
+This is the repository for the King of the Court web page. It's built using **Next.js** and deployed using **Vercel**.
 
 Visit the website here: [**King of the Court**](https://king-of-the-court.vercel.app/)
 
